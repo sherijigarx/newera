@@ -9,7 +9,6 @@ import GPUtil
 import sys
 import os
 import re
-# from lib.default_args import default_args as args
 from lib import __spec_version__ as spec_version
 
 
