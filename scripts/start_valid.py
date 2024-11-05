@@ -22,12 +22,10 @@ from datetime import timedelta
 from shlex import split
 from pathlib import Path
 from typing import List
-# from ttm.aimodel import args
 
 log = logging.getLogger(__name__)
 UPDATES_CHECK_TIME = timedelta(minutes=5)
 ROOT_DIR = Path(__file__).parent.parent
-# args = [f"--{key}={value}" for key, value in args.items()]  # Convert args to list of strings
 
 
 
