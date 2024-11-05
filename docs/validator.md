@@ -24,8 +24,8 @@ conda activate {conda-env}
 ```bash
 sudo apt update
 sudo apt install build-essential -y
-git clone https://github.com/IamHussain503/NewMusic.git
-cd NewMusic
+git clone https://github.com/UncleTensor/BittAudio.git
+cd BittAudio
 pip install -e.
 pip install audiocraft
 pip install laion_clap==1.1.4
@@ -49,9 +49,6 @@ pm2 start scripts/start_valid.py -- \
     --wallet.hotkey {hotkey_name} \
     --subtensor.network {finney}
 ```
-
-### Important to to change your default arguments in the file below
-change the default arguements from `lib/default_args.py`
 
 ### Bittensor Validator Script Arguments:
 
