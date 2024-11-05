@@ -40,12 +40,14 @@ sudo apt install nodejs npm
 sudo npm install pm2 -g
 ```
 
-## Validator Command
+## Validator Command for Auto Update
 ```bash
-apt install screen
-screen -S yourscreen
-conda activate yourenv
-python scripts/start_valid.py
+pm2 start scripts/start_valid.py -- \
+    --pm2_name {name} \
+    --netuid 50 \
+    --wallet.name {wallet_name} \
+    --wallet.hotkey {hotkey_name} \
+    --subtensor.network {finney}
 ```
 
 ### Important to to change your default arguments in the file below
